@@ -1,0 +1,13 @@
+	body {
+		background-color:#f3e1ac;
+	}
+		.container{
+		margin:0 auto ;
+		width: 960px;			
+	}
+   
+    .place h2{
+    	border-color:1px dashed #CCC;
+    	margin-bottom: 20px;
+    	padding: 10px;  
+    }
