@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">  
-	<title>FORMULÁRIO</title>
+<head>	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formulário</title>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"> 
 </head>
+
 <body>
-	<form>
-		<fieldset>
-			<label for="PrimeiroNome">Nome:</label>
-			<input type="text" name="PrimeiroNome">
+<div class="container">
+<form>
+ <div class="form-group">
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+ </div>
+ <div class="form-group">
+   <label for="exampleInputPassword1">Password</label>
+   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+ </div>
+ <div class="form-group">
+   <label for="exampleInputFile">File input</label>
+   <input type="file" id="exampleInputFile">
+   <p class="help-block">Example block-level help text here.</p>
+ </div>
+ <div class="checkbox">
+   <label>
+     <input type="checkbox"> Check me out
+   </label>
+ </div>
+ <button type="submit" class="btn btn-default">Submit</button>
+</form>
 
-			<label for="sobreNome">Sobrenome:</label>
-			<input type="text" name="PrimeiroNome"> 
-			</input>	
-		</fieldset>	
-		<br>
+<form>
+<fieldset>
+<legend>Identificação Pessoal</legend>
+<label form="PrimeiroNome">Nome do Usuário: </label>
+<input type="text" name="PrimeiroNome" placeholder="Seu Nome">
 
-		<fieldset>	
-			<legend>Genero</legend>
-			<input type="radio" name="gender" value="male"			
-			checked> Masculino<br>
-			<input type="radio" name="gender" value="female"			
-			checked> Feminino<br>
-			<input type="radio" name="gender" value="other"			
-			checked> Outros<br>
-		</fieldset>	
+<label form="Sobrenome">Sobrenome: </label>
+<input type="text" name="Sobrenome" placeholder="Seu Sobrenome">
 
-	</form>
 
+</fieldset>
+<fieldset>
+<legend>Gênero</legend>
+<input type="radio" name="gender" value="male" checked>Masculino<br>
+<input type="radio" name="gender" value="female" >Feminino<br>
+<input type="radio" name="gender" value="other">Outro<br>
+</fieldset>
+<input type="submit" value="Enviar"><br>
+<fieldset>
+<legend>Seleção</legend>
+<select name="cars">
+<option value="jeep">Jeep Compass</option>
+<option value="honda">Honda Civic</option>
+<option value="toyota">Toyota Corolla</option>
+<option value="audi">Audi A4</option>
+</select>
+</fieldset>	
+</form>
+</div>
 </body>
 </html>
 
